@@ -55,6 +55,7 @@ group(:development, :test) do
   # two rake gems installed again
   gem "rake", "<= 12.3.0"
   gem "simplecov"
+  # ruby 2.6 requires webmock > 3.4.2 with fixes that are currently only on master
   gem "webmock", git: "https://github.com/bblimke/webmock.git", branch: "master"
 
   # for testing new chefstyle rules
